@@ -2,7 +2,8 @@ require './lib/card'
 require './lib/deck'
 
 class Player
-  attr_reader :name, :deck
+  attr_reader :name,
+              :deck
 
   def initialize(name, deck)
     @name = name
