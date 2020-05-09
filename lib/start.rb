@@ -31,10 +31,10 @@ class Start
   end
 
   def final_winner
-    if player1.deck.cards.length == 0
+    if player1.has_lost? == true
        "*~*~*~* #{player2.name} has won the game! *~*~*~*"
     elsif
-       player2.deck.cards.length == 0
+       player2.has_lost? == true
        "*~*~*~* #{player1.name} has won the game! *~*~*~*"
      end
   end
