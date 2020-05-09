@@ -64,3 +64,5 @@ deck2 = Deck.new([card2, card3, card4, card5, card6, card8,
 
 player1 = Player.new("Megan", deck1)
 player2 = Player.new("Aurora", deck2)
+
+turn = Turn.new(player1, player2)
