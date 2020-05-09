@@ -61,10 +61,11 @@ class Turn
 
   def start
     p "Welcome to War! (or Peace) This game will be played with 52 cards."
-    p "The players today are #{player1} and #{player2}."
+    p "The players today are #{player1.name} and #{player2.name}."
     p "Type 'GO' to start the game."
     p "-" * 66
 
-
+    entry = gets.chomp
+    input = gets.chomp
   end
 end
