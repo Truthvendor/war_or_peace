@@ -196,9 +196,8 @@ class Turntest < Minitest::Test
 
     turn = Turn.new(player1, player2)
     turn.pile_cards
-    winner = turn.winner
-    assert_equal [card1, card2, card5, card4, card3, card6], turn.spoils_of_war
-    require "pry"; binding.pry
+    assert_equal [card1, card2, card5, card4, card3, card6],
+    turn.spoils_of_war.flatten
     turn.award_spoils(player2)
     assert_equal 1, turn.player1.deck.cards.count
     assert_equal 7, turn.player2.deck.cards.count
