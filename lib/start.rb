@@ -28,7 +28,15 @@ class Start
 
   def turn
 
+
+    if player1.has_lost? == true ||
+       player2.has_lost? == true ||
+       turn_count == 1000000
+       break
+     end
   end
+
+  # .self != "Perfect" "Oh well"
 
   def final_winner
     if player1.has_lost? == true
