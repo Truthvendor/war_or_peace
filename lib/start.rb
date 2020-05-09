@@ -11,6 +11,7 @@ class Start
   def initialize(player1, player2)
     @player1 = player1
     @player2 = player2
+    @turn_count = 0
 
   end
 
@@ -27,6 +28,15 @@ class Start
 
   def turn
 
+  end
+
+  def final_winner
+    if player1.deck.cards.length == 0
+       "*~*~*~* #{player2.name} has won the game! *~*~*~*"
+    elsif
+       player2.deck.cards.length == 0
+       "*~*~*~* #{player1.name} has won the game! *~*~*~*"
+     end
   end
 
 end
