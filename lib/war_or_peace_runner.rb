@@ -51,16 +51,16 @@ card50 = Card.new(:diamond, 'Queen', 12)
 card51 = Card.new(:diamond, 'King', 13)
 card52 = Card.new(:diamond, 'Ace', 14)
 
-deck1 = Deck.new([card22, card34, card45, card52,
+deck1 = Deck.new([card14, card34, card45, card52,
   card15, card1, card7, card9, card28, card33, card37,
   card41, card25, card29, card36, card38, card49, card11,
-  card23, card31, card35, card40, card48, card16, card20,
+  card23, card31, card35, card46, card48, card16, card20,
   card42])
 
 deck2 = Deck.new([card2, card3, card4, card5, card6, card8,
-  card10, card12, card13, card14, card17, card18, card19,
+  card10, card12, card13, card22, card17, card18, card19,
   card21, card50, card24, card26, card27, card30, card32,
-  card39, card43, card44, card46, card47, card51])
+  card39, card43, card44, card40, card47, card51])
 
 player1 = Player.new("Megan", deck1)
 player2 = Player.new("Aurora", deck2)
