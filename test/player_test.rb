@@ -16,6 +16,7 @@ class Playertest < Minitest::Test
   end
 
   def test_it_has_a_name
+    # skip
     card1 = Card.new(:diamond, 'Queen', 12)
     card2 = Card.new(:spade, '3', 3)
     card3 = Card.new(:heart, 'Ace', 14)
@@ -27,6 +28,7 @@ class Playertest < Minitest::Test
   end
 
   def test_it_has_a_deck
+    # skip
     card1 = Card.new(:diamond, 'Queen', 12)
     card2 = Card.new(:spade, '3', 3)
     card3 = Card.new(:heart, 'Ace', 14)
@@ -38,6 +40,7 @@ class Playertest < Minitest::Test
   end
 
   def test_it_has_not_lost
+    # skip
     card1 = Card.new(:diamond, 'Queen', 12)
     card2 = Card.new(:spade, '3', 3)
     card3 = Card.new(:heart, 'Ace', 14)
@@ -46,9 +49,11 @@ class Playertest < Minitest::Test
     player = Player.new('Clarisa', deck)
 
     assert_equal false, player.has_lost?
+    assert_equal [card1, card2, card3], player.deck.cards
   end
 
   def test_it_has_lost
+    # skip
     card1 = Card.new(:diamond, 'Queen', 12)
     card2 = Card.new(:spade, '3', 3)
     card3 = Card.new(:heart, 'Ace', 14)
