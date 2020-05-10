@@ -29,6 +29,11 @@ class Start
   def turn
 
     loop do
+      turn :basic
+
+      turn :war
+
+      turn :mutually_assured_destruction
 
 
     if player1.has_lost? == true ||
