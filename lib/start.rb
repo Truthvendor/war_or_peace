@@ -28,6 +28,8 @@ class Start
 
   def turn
 
+    loop do
+
 
     if player1.has_lost? == true ||
        player2.has_lost? == true ||
