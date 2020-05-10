@@ -26,9 +26,4 @@ class Deck
   def add_card(card)
     cards.push(card)
   end
-
-  # def initialize(argument) defi
-  #   @argument = argument
-  # end
-
 end
