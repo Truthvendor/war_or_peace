@@ -34,6 +34,7 @@ class Decktest < Minitest::Test
     cards = [card1, card2, card3]
     deck = Deck.new(cards)
 
+    assert_equal 12, deck.rank_of_card_at(0)
     assert_equal 14, deck.rank_of_card_at(2)
   end
 
@@ -83,7 +84,7 @@ class Decktest < Minitest::Test
     card4 = Card.new(:club, '5', 5)
 
     deck.add_card(card4)
-    
+
     assert_equal [card1, card2, card3, card4], deck.cards
   end
 end
